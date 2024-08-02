@@ -9,7 +9,7 @@ $projectXml.Project.PropertyGroup[0].FileVersion = "$($versionXml.borderlessgami
 $projectXml.Project.PropertyGroup[0].Version = "$($versionXml.borderlessgaming.version)"
 $projectXml.Save($csproj)
 
-& bebopc
+& C:\ProgramData\bebop\bebopc.exe
 & dotnet restore "$cjproj"
 & dotnet publish "$csproj" -c Release -r win-x64
 & iscc "$root\Installers\BorderlessGaming_Standalone_Admin.iss"
