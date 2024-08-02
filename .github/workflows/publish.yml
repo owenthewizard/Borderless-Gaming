@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: installer
-          path: ./Installers/BorderlessGaming${{ env.RELEASE_VERSION }}_admin_setup.exe
+          path: ./Installers/BorderlessGaming10.0_admin_setup.exe
 
       - name: Create Release
         id: create_release
